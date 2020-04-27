@@ -64,4 +64,4 @@ The basic principle is that there are sequences.  Each sequence has a name with 
 
 Each keyword can have an override sequence and step applied to it.  If that keyword results in the triggering of the step then the supplied sequence and / or step number will be swaped and the action from that new sequence and task will be executed instead.  Each action can also have a next step applied.  If such a set is provided then rather than moving to the next step in the sequence it'll jump to the newly supplied step/sequence and wait for that to be triggered.
 
-
+There is a wiring up of GPIO17.  On the ReSpeaker-2 that is linked to the button on the board which will pull up when pressed.  The intention of the code that reacts to the button is that it can be linked to either a physical external button or a PIR that will cause it to speak when triggered. By default this only happens if it hasn't spoken for 30 seconds. I'd recommend setting it to something useful based upon intended use.  The PIR I'm intending to use with mine is TruSens HC-SR501 and costs about £3.
