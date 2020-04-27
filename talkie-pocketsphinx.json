@@ -1,0 +1,118 @@
+{
+	"startup": {
+		"play1": "Howdie doodly doo.wav",
+		"play3": "Anyone like any toast.wav"
+	},
+	"temp": {
+		"play2": "Talkie talkie toaster toastings the game.wav"
+	},
+	"sequences": {
+		"toast": {
+			"1": {
+				"keywords": {
+					"toast": {
+						"sensitivity": "1e-4"
+					}
+				},
+				"actions": {
+					"play": "Did someone say they wanted toast.wav"
+				}
+			}
+		},
+		"sing": {
+			"1": {
+				"keywords": {
+					"luna city": {
+						"sensitivity": "1e-25"
+					},
+					"surfing": {
+						"sensitivity": "1e-25"
+					}
+				},
+				"actions": {
+					"play": "You cant sing you know.wav"
+				},
+				"timeout": 3
+			},
+			"2": {
+				"numberrequired": 1,
+				"keywords": {
+					"and you can": {
+						"sensitivity": "1e-25"
+					}
+				},
+				"actions": {
+					"play": "Oh just because im a toaster im tone deaf.wav"
+				},
+				"timeout": 20
+			},
+			"3": {
+				"keywords": {
+					"go on": {
+						"sensitivity": "1e-12"
+					}
+				},
+				"actions": {
+					"play": "Fly me to the mood (sung).wav"
+				}
+			}
+		},
+		"cantheyseeus": {
+			"1": {
+				"keywords": {
+					"can they": {
+						"sensitivity": "1e-18"
+					},
+					"see us": {
+						"sensitivity": "1e-14"
+					}
+				},
+				"actions": {
+					"play": "Of course not use your loaf.wav"
+				},
+				"timeout": 3
+			}
+		},
+		"question": {
+			"1": {
+				"keywords": {
+					"ask me": {
+						"sensitivity": "1e-20"
+					},
+					"question": {
+						"sensitivity": "1e-20"
+					}
+				},
+				"actions": {
+					"play": "So what else is now.wav",
+					"play2": "What about a muffin.wav",
+					"play3": "Would you like some toast.wav",
+					"play4": "Would you like a cheese and ham bravil.wav",
+					"play5": "why have you got an IQ of 6k.wav",
+					"play6": "Would you like a toasted teacake.wav",
+					"play7": "Do you know about chaos theory.wav",
+					"play8": "OK heres my question would you like toast.wav",
+					"play9": "Woiuld anyone like any toast.wav"
+				},
+				"timeout": 3,
+				"actionmethod": "random"
+			}
+		},
+		"whyarewehere": {
+			"1": {
+				"keywords": {
+					"why are": {
+						"sensitivity": "1e-15"
+					},
+					"we here": {
+						"sensitivity": "1e-15"
+					}
+				},
+				"actions": {
+					"play": "Beats me want some toast.wav"
+				},
+				"timeout": 3
+			}
+		}
+	}
+}

@@ -1,0 +1,423 @@
+{
+	"startup": {
+		"play1": "Howdie doodly doo.wav",
+		"play3": "Anyone like any toast.wav"
+	},
+	"temp": {
+		"play2": "Talkie talkie toaster toastings the game.wav"
+	},
+	"sequences": {
+		"toast": {
+			"1": {
+				"detectionmethod": "insentance",
+				"priority": 1,
+				"numberrequired": 1,
+				"keywords": {
+					"toast": {},
+					"toaster": {},
+					"toastie": {}
+				},
+				"actions": {
+					"play": "Did someone say they wanted toast.wav"
+				}
+			},
+			"2": {
+				"timeout": 5,
+				"detectionmethod": "insentance",
+				"numberrequired": 1,
+				"keywords": {
+					"no": {},
+					"none": {},
+					"don't": {}
+				},
+				"actions": {
+					"play": "Some nice hot crisp buttered toast.wav"
+				}
+			},
+			"3": {
+				"timeout": 5,
+				"detectionmethod": "insentance",
+				"numberrequired": 1,
+				"keywords": {
+					"no": {},
+					"none": {},
+					"don't": {}
+				},
+				"actions": {
+					"play": "You dont want any toast then.wav"
+				}
+			},
+			"4": {
+				"timeout": 5,
+				"detectionmethod": "insentance",
+				"numberrequired": 1,
+				"keywords": {
+					"no": {},
+					"none": {},
+					"don't": {}
+				},
+				"actionmethod": "random",
+				"actions": {
+					"play2": "You know the last time you had toast- 18 days ago.wav",
+					"play3": "If you dont want any then my existence is meaningless.wav",
+					"play": "What about a muffin.wav"
+				}
+			}
+
+		},
+		"sing": {
+			"1": {
+				"detectionmethod": "insentance",
+				"priority": 100,
+				"numberrequired": 1,
+				"keywords": {
+					"lunar city": {},
+					"luna city": {},
+					"city surfing": {},
+					"university surfing": {}
+				},
+				"actions": {
+					"play": "You cant sing you know.wav"
+				}
+			},
+			"2": {
+				"detectionmethod": "insentance",
+				"numberrequired": 1,
+				"keywords": {
+					"you can": {},
+					"can you": {}
+				},
+				"actions": {
+					"play": "Oh just because im a toaster im tone deaf.wav"
+				},
+				"timeout": 20
+			},
+			"3": {
+				"detectionmethod": "insentance",
+				"numberrequired": 1,
+				"keywords": {
+					"go on": {},
+					"on then": {},
+					"bowman": {},
+					"gordon": {},
+					"goldman": {}
+				},
+				"actions": {
+					"play": "Fly me to the mood (sung).wav"
+				}
+			}
+		},
+		"cantheyseeus": {
+			"1": {
+				"detectionmethod": "insentance",
+				"priority": 80,
+				"numberrequired": 1,
+				"keywords": {
+					"can they see": {},
+					"they see us": {},
+					"can i say is": {},
+					"can they say is": {}
+				},
+				"actions": {
+					"play": "Of course not use your loaf.wav"
+				}
+			}
+		},
+		"question": {
+			"1": {
+				"detectionmethod": "insentance",
+				"priority": 90,
+				"numberrequired": 2,
+				"keywords": {
+					"ask": {},
+					"question": {},
+					"me a question": {},
+					"me question": {},
+					"cost me": {},
+					"must be a": {}
+				},
+				"actions": {
+					"play": "So what else is now.wav",
+					"play2": "What about a muffin.wav",
+					"play3": "Would you like some toast.wav",
+					"play4": "Would you like a cheese and ham bravil.wav",
+					"play5": "why have you got an IQ of 6k.wav",
+					"play6": "Would you like a toasted teacake.wav",
+					"play7": "Do you know about chaos theory.wav",
+					"play8": "OK heres my question would you like toast.wav",
+					"play9": "Would anyone like any toast.wav",
+					"play10": "would you like a crumpet.wav",
+					"play11": "Any question.wav",
+					"play12": "So what is your life expectancy.wav"
+				},
+				"actionmethod": "random",
+				"stepoverride": {
+					"play3": {
+						"sequence": "toast",
+						"step": "2"
+					},
+					"play11": {
+						"sequence": "anyquestion",
+						"step": "2"
+					}
+				}
+			}
+		},
+		"anyquestion": {
+			"1": {
+				"detectionmethod": "insentance",
+				"priority": 100,
+				"keywords": {
+					"question any question": {}
+				},
+				"actions": {
+					"play11": "Any question.wav"
+				}
+			},
+			"2": {
+				"detectionmethod": "exactmatch",
+				"timeout": 10,
+				"keywords": {
+					"yes": {},
+					"sure": {},
+					"of course": {},
+					"of cause": {},
+					"yeah": {},
+					"yup": {}
+				},
+				"actions": {
+					"play": "Truly anything and you will answer.wav"
+				}
+			},
+			"3": {
+				"detectionmethod": "exactmatch",
+				"timeout": 10,
+				"keywords": {
+					"yes": {},
+					"sure": {},
+					"of course": {},
+					"of cause": {},
+					"yeah": {},
+					"yup": {}
+				},
+				"actions": {
+					"play": "OK heres my question would you like toast.wav"
+				}
+			}
+		},
+		"accident": {
+			"1": {
+				"detectionmethod": "insentance",
+				"priority": 20,
+				"numberrequired": 3,
+				"keywords": {
+					"lump": {},
+					"hammer": {},
+					"accident": {},
+					"garbage": {},
+					"disposal": {},
+					"the toaster": {},
+					"waste": {},
+					"chips": {},
+					"damaged": {},
+					"badly": {},
+					"involving": {}
+					""
+				},
+				"actions": {
+					"play": "That was no accident.wav"
+				}
+			}
+		},
+		"whyarewehere": {
+			"1": {
+				"detectionmethod": "insentance",
+				"priority": 80,
+				"numberrequired": 3,
+				"keywords": {
+					"why": {},
+					"here": {},
+					"hear": {},
+					"year": {},
+					"are": {},
+					"we": {}
+				},
+				"actions": {
+					"play": "Beats me want some toast.wav"
+				}
+			}
+		},
+		"wakeupsequence": {
+			"1": {
+				"detectionmethod": "insentance",
+				"priority": 20,
+				"numberrequired": 4,
+				"keywords": {
+					"toast": {},
+					"no": {},
+					"don't": {},
+					"doesn't": {},
+					"want": {},
+					"not": {},
+					"fact": {},
+					"now": {},
+					"around": {},
+					"here": {},
+					"one": {},
+					"he ": {}
+				},
+				"actions": {
+					"play": "How about a muffin.wav"
+				}
+			},
+			"2": {
+				"detectionmethod": "insentance",
+				"timeout": 20,
+				"numberrequired": 4,
+				"keywords": {
+					"buns": {},
+					"baps": {},
+					"bagguette": {},
+					"bagel": {},
+					"flap": {},
+					"jack": {},
+					"flat": {},
+					"no": {},
+					"hot": {},
+					"cross": {},
+					"toast": {},
+					"croissant": {},
+					"smoking": {},
+					"bones": {},
+					"waffle": {
+						"sequence": "whyrepairme",
+						"step": "1"
+					},
+					"what fools": {
+						"sequence": "whyrepairme",
+						"step": "1"
+					}
+				},
+				"actions": {
+					"play": "Ah so youre a waffle man.wav"
+				}
+			}
+		},
+		"whyrepairme": {
+			"1": {
+				"keywords": {
+					"never trigger this action as it is just a single reply": {}
+				},
+				"actions": {
+					"play": "If you dont want any toast why did you repair me.wav"
+				}
+			}
+		},
+		"havetogo": {
+			"1": {
+				"detectionmethod": "insentance",
+				"priority": 20,
+				"numberrequired": 2,
+				"keywords": {
+					"to go": {},
+					"leave": {},
+					"bye": {}
+				},
+				"actions": {
+					"play": "wait there is one question the others will have to know.wav",
+					"play2": "Would you like a cheese and ham bravil.wav"
+				}
+			}
+		},
+		"havetogo2": {
+			"1": {
+				"detectionmethod": "insentance",
+				"priority": 1,
+				"numberrequired": 1,
+				"keywords": {
+					"goodbye": { "sequence": "havetogo" },
+					"bye bye": { "sequence": "havetogo" },
+					"see you later": { "sequence": "havetogo" },
+					"she later": { "sequence": "havetogo" },
+					"night night": { "sequence": "havetogo" },
+					"no night": { "sequence": "havetogo" },
+					"good night": { "sequence": "havetogo" }
+				}
+			}
+		},
+		"donotoffergrilledbread": {
+			"1": {
+				"detectionmethod": "insentance",
+				"priority": 1,
+				"numberrequired": 3,
+				"keywords": {
+					"grilled": {},
+					"bread": {},
+					"crew": {},
+					"products": {},
+					"member": {},
+					"polo": {},
+					"mallet": {}
+				},
+				"actions": {
+					"play": "Can I ask just one question.wav"
+				}
+			},
+			"2": {
+				"detectionmethod": "exactmatch",
+				"timeout": 10,
+				"keywords": {
+					"yes": {},
+					"sure": {},
+					"of course": {},
+					"of cause": {},
+					"yeah": {},
+					"yup": {},
+					"go ahead": {}
+				},
+				"actions": {
+					"play": "Would anyone like any toast.wav"
+				}
+			},
+			"3": {
+				"detectionmethod": "insentance",
+				"numberrequired": 1,
+				"timeout": 10,
+				"keywords": {
+					"did you hear": {},
+					"what I just said": {},
+					"hear what I": {}
+				},
+				"actions": {
+					"play": "Yes but I thought you might have changed your mind.wav"
+				}
+			},
+			"4": {
+				"detectionmethod": "insentance",
+				"timeout": 10,
+				"numberrequired": 1,
+				"keywords": {
+					"no toast": {},
+					"changed our mind": {},
+					"haven't changed": {}
+				},
+				"actions": {
+					"play": "it is my reisondetra.wav",
+					"play2": "If you dont want any toast why did you repair me.wav"
+				}
+			}
+		},
+		"busy": {
+			"1": {
+				"detectionmethod": "insentance",
+				"priority": 1,
+				"keywords": {
+					"busy": {}
+				},
+				"actions": {
+					"play": "Oh youre not busy eating toast are ya.wav"
+				}
+			}
+		}
+	}
+}
