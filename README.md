@@ -30,7 +30,7 @@ This project went through three main voice recognition engines.  These were all 
     - Heavy CPU usage
     - Still not perfect
     
-For SnowBoy you need to train each trigger you want to detect.  To do this you need three recordings and an account with them.  I've included the train-snowboy.py script which needs your account token adding to it.  When this is run it captures 3 recordings (press ctrl-c when you've finished speaking each time) and it'll upload the recording and download the resulting file.  Note that this is based upon their example which simply didn't work out the box and needed quite a few tweaks.
+For SnowBoy you need to train each trigger you want to detect.  To do this you need three recordings and an account with them.  I've included the train-snowboy.py script which needs your account token adding to it.  When this is run it captures 3 recordings (press ctrl-c when you've finished speaking each time) and it'll upload the recording and download the resulting file.  Note that this script is based upon their api example which simply didn't work out the box and needed quite a few tweaks.
 
 The Snowboy website gives good instructions on how to deploy the engine to a Raspberry Pi, so I won't repeat here.  
 
