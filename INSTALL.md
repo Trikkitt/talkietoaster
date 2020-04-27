@@ -34,5 +34,11 @@ pcm.!default {
   - pip3 install vosk
 * Install RPi GPIO with the command
   - pip3 install RPi.GPIO
-   
-Now there is one thing missing - the audio samples.  These by default go in /home/pi/ftp/files/sounds but you can stick them wherever you want and update the path in the script.  I can't include them here for copyright reasons.
+* Clone this repository with the command
+  - git clone https://github.com/Trikkitt/talkietoaster.git
+* Now move in to the folder "~/talkietoaster" and run the command
+  - python3 toastie-vosk.py
+
+The program will run and you'll be able to see it responding to your spoken commands and what it tries to play back to you.  Now there is one thing missing - the audio samples.  These by default go in /home/pi/ftp/files/sounds but you can stick them wherever you want and update the path in the script.  I can't include them here for copyright reasons.  So you won't hear a thing until you obtain them yourself.  Note that the filenames are rubbish and have spelling errors (thanks to capturing them at 2am while tired), but you get the idea of what it should say.
+
+To run the program 
