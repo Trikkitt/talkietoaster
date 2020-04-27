@@ -3,6 +3,8 @@ Talkie Toaster
 
 For anyone who is a fan of Red Dwarf, this is a fun little project.  I've seen plenty of push a button or activate a PIR to play random talkie toaster clips.  This takes it a step further and it tries to help a little more conversation.  You can use this to actually play out scenes from the show.  For example try "luna city surfing" and repeat lister's lines.  You can also just ask things like "ask me a question" or just drop the word "toast" in to something you're saying and keep saying no.
 
+For how to install the best version just follow the steps in the INSTALL.md file.  The rest of this explains a bit about the other versions included and why I moved on to different recognition engines.  The only thing missing are the sample files, sorry!
+
 This project went through three main voice recognition engines.  These were all on a Raspberry Pi.  I needed one that didn't require an Internet connection as I wanted it to listen constantly and the Internet APIs really don't like that, plus privacy concerns.  All I needed was to trigger.  Everything I've done is based around Python 3.
 
   SnowBoy
