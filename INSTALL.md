@@ -32,4 +32,6 @@ pcm.!default {
   - mv alphacep-model-android-en-us-0.3 model-us
 * Install vosk with the command
   - pip3 install vosk
+* Install RPi GPIO with the command
+  - pip3 install RPi.GPIO
    
