@@ -35,3 +35,4 @@ pcm.!default {
 * Install RPi GPIO with the command
   - pip3 install RPi.GPIO
    
+Now there is one thing missing - the audio samples.  These by default go in /home/pi/ftp/files/sounds but you can stick them wherever you want and update the path in the script.  I can't include them here for copyright reasons.
